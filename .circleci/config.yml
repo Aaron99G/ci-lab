@@ -58,7 +58,7 @@
 #       - one
 #       - two
 
-# WORKGLOW FUNCTIOANLIT 2.0
+# WORKFLOW FUNCTIONALITY 2.0
 version: 2
 jobs:
   one:
@@ -69,6 +69,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
+      - add_ssh_keys:
       - run: echo "A first hello"
       - run: mkdir -p my_workspace
       - run: echo "Trying out workspaces" > my_workspace/echo-output
@@ -86,6 +87,7 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
+      - add_ssh_keys:
       - run: echo "A more familiar hi"
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
