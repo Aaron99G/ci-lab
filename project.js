@@ -1,4 +1,4 @@
-function getGreeting(name){
+function getGreeting(name) {
     return "Hi " + name;
 }
 
