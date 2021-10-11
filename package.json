@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "jest": "^27.0.4"
+    "jest": "^27.2.5"
   },
   "scripts": {
     "test": "jest"
@@ -11,5 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/jest": "^27.0.2"
+  }
 }
